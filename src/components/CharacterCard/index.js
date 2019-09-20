@@ -1,4 +1,4 @@
-import React from ("react");
+import React from "react";
 import "./style.css";
 
 function CharacterCard(props) {
@@ -12,3 +12,5 @@ function CharacterCard(props) {
         </div>
     )
 }
+
+export default CharacterCard;

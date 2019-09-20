@@ -1,5 +1,6 @@
 import React from 'react';
 import Wrapper from './components/Wrapper';
+import CharacterCard from './components/CharacterCard'
 import characters from "./cards.json";
 
 
