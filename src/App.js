@@ -2,6 +2,7 @@ import React from 'react';
 import Wrapper from './components/Wrapper';
 import CharacterCard from './components/CharacterCard'
 import characters from "./cards.json";
+import Title from "./components/Title";
 
 
 class App extends React.Component{
@@ -12,6 +13,7 @@ class App extends React.Component{
   render(){
     return(
       <Wrapper>
+        <Title>React Clicky Game!</Title>
         {this.state.characters.map(character =>(
           <CharacterCard
         id = {character.id}
