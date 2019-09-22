@@ -24,7 +24,7 @@ The user will begin the game by clicking on any picture of the characters shown.
 * JavaScript
 * React.js
 * CSS
-* Heroku
+* GitHub Pages
 
 ## GitHub Repository
 (https://github.com/wwhite12/react-game.git)
