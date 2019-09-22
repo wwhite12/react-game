@@ -67,7 +67,7 @@ class App extends React.Component{
       <Wrapper>
         <Title>React Clicky Game!</Title>
         <Score
-        title="Don't click twice"
+        title="Try to click on all the characters below without clicking on the same picture twice!"
         score={this.state.score}
         highScore={this.state.highScore}
         />

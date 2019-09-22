@@ -1,68 +1,33 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Click Game
 
-## Available Scripts
+## Overview
+React-based web game where a user will attempt to click on the different pictures of characters without clicking on the same picture twice.
 
-In the project directory, you can run:
+## Instructions 
+The user will begin the game by clicking on any picture of the characters shown. After this, the pictures being rendered will shuffle positions and the user will try to click on a different picture without clicking on any picture they have already clicked on. While playing, the game will update their current score and their over high score. The game will reset if the user clicks on the same picture twice, or the user clicks all ten pictures correctly.
 
-### `npm start`
+## Code Breakdown
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![image](./images/renderFunc.png)
+* Render function in App.js that renders all components specified. Includes mapping over the array of characters and assigning each one to a card to be rendered.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+![image](./images/characterCard.png)
+* Example of a component. Card component that holds each image of a character. Also holds an id and includes an onClick function.
 
-### `npm test`
+![image](./images/clickedImgLogic.png)
+* Function that is stored in each character card that runs on click. When a new image is clicked, it is pushed into a clickedImg array. This function then checks each clicked picture to see if it has already been clicked. If a picture has not already been clicked, the images rendered are shuffled and the current score is updated. If a picture has already been clicked, the state of the score is set back to zero and the state of the clickedImg array is set back to empty.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![image](./images/shuffleFunc.png)
+* function that shuffles rendering of images.
 
-### `npm run build`
+## Technology 
+* JavaScript
+* React.js
+* CSS
+* Heroku
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## GitHub Repository
+(https://github.com/wwhite12/react-game.git)
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### Creater
+William White
