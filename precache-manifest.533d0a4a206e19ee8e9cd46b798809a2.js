@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "88a22d0184da902047d47b27be7d7e8d",
+    "revision": "443d4383ee6ab4f053b4bec59da156f2",
     "url": "/react-game/index.html"
   },
   {
-    "revision": "95ec804b4be7e8feb50b",
-    "url": "/react-game/static/css/main.f65073c0.chunk.css"
+    "revision": "8118435f68b03dee0f97",
+    "url": "/react-game/static/css/main.fc0a5c3f.chunk.css"
   },
   {
     "revision": "ed4de29e4ba2e73cead5",
     "url": "/react-game/static/js/2.8d936451.chunk.js"
   },
   {
-    "revision": "95ec804b4be7e8feb50b",
+    "revision": "8118435f68b03dee0f97",
     "url": "/react-game/static/js/main.a6df7ee3.chunk.js"
   },
   {
