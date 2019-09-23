@@ -32,7 +32,7 @@ class App extends React.Component{
       clickedImg.push(id);
       console.log(clickedImg);
       this.handleIncrement();
-      this.increaseHigh();
+      // this.increaseHigh();
       this.makeShuffle();
     } else if (this.state.score === 10) {
       this.setState({
@@ -56,17 +56,21 @@ class App extends React.Component{
   };
 
   handleIncrement = () => {
-    this.setState({ score: this.state.score + 1 });
-    
+    const {score, highScore} = this.state;
+    const newScore = score + 1;
+    this.setState({
+      score: newScore,
+      highScore: newScore > highScore ? newScore : highScore
+    });
   };
 
-  increaseHigh = () => {
-    if(this.state.score >= this.state.highScore){
-      this.setState({
-        highScore: this.state.score
-      })
-    }
-  }
+  // increaseHigh = () => {
+  //   if(this.state.score >= this.state.highScore){
+  //     this.setState({
+  //       highScore: this.state.score
+  //     })
+  //   }
+  // }
 
   makeShuffle = () => {
     this.setState({ characters: shuffle(characters) });
