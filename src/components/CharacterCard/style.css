@@ -17,6 +17,9 @@
     width: 100%;
     height:100%;
   }
-  .card .img-container:hover > img{
+  /* .card .img-container:hover > img{
     transform: scale(1.3);
+  } */
+  .card:hover{
+    transform:scale(1.3);
   }
