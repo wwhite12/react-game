@@ -29,5 +29,5 @@ The user will begin the game by clicking on any picture of the characters shown.
 ## GitHub Repository
 (https://github.com/wwhite12/react-game.git)
 
-### Creater
+### Creator
 William White
